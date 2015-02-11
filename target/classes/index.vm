@@ -1,0 +1,13 @@
+<button type="button" class="btn btn-primary">Send CORS Request</button>
+<p  class="alert-success"></p>
+<script type="text/javascript">
+$(function(){
+  $(".btn-primary").click(function(){
+     $.post("http://localhost:8080/cors",function(result){
+	    $("p").text(result);
+	  });
+  });
+});
+ </script>
+ 
+ 
